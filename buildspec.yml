@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - git clone https://github.com/flutter/flutter.git -b stable
+      - export PATH="$PATH:`pwd`/flutter/bin"
+      - flutter doctor
+  pre_build:
+    commands:
+      - flutter pub get
+  build:
+    commands:
+      - flutter build apk --release
+      - mkdir -p build/devicefarm
+      - cp build/app/outputs/flutter-apk/app-release.apk build/devicefarm/
+      - cd build/devicefarm && zip flutter-app.zip app-release.apk
+  post_build:
+    commands:
+      - echo "Build complete!"
+artifacts:
+  files:
+    - build/devicefarm/flutter-app.zip
