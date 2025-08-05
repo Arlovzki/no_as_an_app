@@ -20,7 +20,7 @@ phases:
       - flutter build apk  --flavor $FLUTTER_ENV --target lib/main.dart --release --dart-define=API_BASE_URL=$API_BASE_URL
       - mkdir -p build/devicefarm
       - cp build/app/outputs/flutter-apk/app-$FLUTTER_ENV-release.apk build/devicefarm/
-      - cd build/devicefarm && zip flutter-app.zip app-release.apk
+      - cd build/devicefarm && zip flutter-app.zip app-$FLUTTER_ENV-release.apk
   post_build:
     commands:
       - echo "Build complete"
