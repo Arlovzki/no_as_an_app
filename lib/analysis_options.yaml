@@ -1,0 +1,11 @@
+analyzer:
+  errors:
+    document_ignores: false
+    depend_on_referenced_packages: false
+include: package:very_good_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    public_member_api_docs: true
+    document_ignores: true
+    depend_on_referenced_packages: true

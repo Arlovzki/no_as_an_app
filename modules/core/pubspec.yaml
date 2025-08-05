@@ -1,0 +1,39 @@
+name: core
+description: A module that contains classes and functions accessible to all feature modules.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+publish_to: none
+
+dependencies:
+  app_links: ^6.1.4
+  app_tracking_transparency: ^2.0.6
+  application:
+    path: ../features/application
+  codenic_logger: ^4.0.2
+  dartz: ^0.10.1
+  device_info_plus: ^11.5.0
+  domain:
+    path: ../features/domain
+  flutter:
+    sdk: flutter
+  get_it: ^8.0.3
+  infrastructure:
+    path: ../features/infrastructure
+  intl: ^0.20.2
+  logging: ^1.2.0
+  package_info_plus: ^8.0.1
+  permission_handler: ^12.0.1
+  uuid: ^4.4.2
+
+dev_dependencies:
+  very_good_analysis: ^6.0.0
+
+flutter:
+  module:
+    androidX: true
+    androidPackage: com.arloubeloria.core
+    iosBundleIdentifier: com.arloubeloria.core

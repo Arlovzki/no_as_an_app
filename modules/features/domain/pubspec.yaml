@@ -1,0 +1,26 @@
+name: domain
+description: A module that specifies coarse-grained business rules and business objects.
+
+publish_to: none
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  core:
+    path: ../../core
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  very_good_analysis: ^6.0.0
+
+flutter:
+  module:
+    androidX: true
+    androidPackage: com.arloubeloria.domain
+    iosBundleIdentifier: com.arloubeloria.domain

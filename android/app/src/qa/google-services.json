@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "19935895514",
+    "project_id": "purego-dev-59a56",
+    "storage_bucket": "purego-dev-59a56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19935895514:android:3af7ad03845d93c59a6ae3",
+        "android_client_info": {
+          "package_name": "com.gcvh.purego.development"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19935895514-3ppsif24dfi1vsbt8g328udtd2rbiot0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2mA3RxdLPWR__dWtw89rkebSQ6A-AKm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19935895514-3ppsif24dfi1vsbt8g328udtd2rbiot0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "19935895514-5moa273pe198q99av6oki3p4le2cpn22.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gcvh.puregoqa"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19935895514:android:b027469fa3b5f7b09a6ae3",
+        "android_client_info": {
+          "package_name": "com.gcvh.purego.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19935895514-3ppsif24dfi1vsbt8g328udtd2rbiot0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2mA3RxdLPWR__dWtw89rkebSQ6A-AKm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19935895514-3ppsif24dfi1vsbt8g328udtd2rbiot0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "19935895514-5moa273pe198q99av6oki3p4le2cpn22.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gcvh.puregoqa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

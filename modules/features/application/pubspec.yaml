@@ -1,0 +1,30 @@
+name: application
+description: A module that orchestrates what can be done within the application by defining use cases.
+
+publish_to: none
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  async: ^2.11.0
+  bloc: ^9.0.0
+  core:
+    path: ../../core
+  dartz: ^0.10.1
+  domain:
+    path: ../domain
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  very_good_analysis: ^6.0.0
+
+flutter:
+  module:
+    androidX: true
+    androidPackage: com.arloubeloria.application
+    iosBundleIdentifier: com.arloubeloria.application

@@ -1,0 +1,50 @@
+name: no_as_an_app
+description: A mobile app that will help you to create an excuses or  reasons to say no
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  app_tracking_transparency: ^2.0.6
+  codenic_logger: ^4.0.2
+  core:
+    path: modules/core
+  flutter:
+    sdk: flutter
+  flutter_phoenix: ^1.1.1
+  get_it: ^8.0.3
+  go_router: ^16.0.0
+  infrastructure:
+    path: modules/features/infrastructure
+  presentation:
+    path: modules/features/presentation
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+  very_good_analysis: ^6.0.0
+
+flutter:
+  uses-material-design: true
+# For app icon and splash screen config
+# flutter_icons:
+#   android: true
+#   ios: true
+#   image_path_ios: assets/icons/app-icon_square.png
+#   image_path_android: assets/icons/app-icon_circle.png
+#   adaptive_icon_background: "#5020b9"
+#   adaptive_icon_foreground: assets/icons/app-icon_adaptive.png
+#   remove_alpha_ios: true
+# flutter_native_splash:
+#   color: "#5020b9"
+#   color_dark: "#1A1335"
+#   image: assets/splash_screens/splash_screen_rappit_icon.png
+#   android_12:
+#     color: "#5020b9"
+#     color_dark: "#1A1335"
+#     image: assets/splash_screens/app-icon_adaptive@1152.png
+#   web: false

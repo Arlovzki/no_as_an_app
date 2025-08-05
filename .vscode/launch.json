@@ -1,0 +1,41 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "dev_debug_with_json",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--flavor=dev",
+        "--dart-define-from-file",
+        "env/dev/env.dev.debug.json"
+      ]
+    },
+    {
+      "name": "qa_debug_with_json",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--flavor=qa",
+        "--dart-define-from-file",
+        "env/qa/env.qa.debug.json"
+      ]
+    },
+    {
+      "name": "prod_debug_with_json",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--flavor=prod",
+        "--dart-define-from-file",
+        "env/prod/env.prod.debug.json"
+      ]
+    },
+  ]
+}

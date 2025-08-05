@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "247847985858",
+    "project_id": "purego-prod-3e017",
+    "storage_bucket": "purego-prod-3e017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247847985858:android:9feec2fbadeb5adb97915b",
+        "android_client_info": {
+          "package_name": "com.gcvh.purego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247847985858-fljjigoihba0dtjsv7e5nnjsvosuvehl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gcvh.purego",
+            "certificate_hash": "dd93d7720d9335fc37fa67c52c3c54397471e50b"
+          }
+        },
+        {
+          "client_id": "247847985858-j4atc4p8968hhhm9gtq3j2dos000mdep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gcvh.purego",
+            "certificate_hash": "891270217b1f32e437442f5e5764987d6591e814"
+          }
+        },
+        {
+          "client_id": "247847985858-3rkggh7d094euf5up5n6edhjg5krrmdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Mgw6l5_9ONhz3ndyp-tlAFMHcZA5DJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247847985858-3rkggh7d094euf5up5n6edhjg5krrmdu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "247847985858-aoq6k6ndh93lpcta9mfc3c1hs6husuta.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gcvh.purego"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
