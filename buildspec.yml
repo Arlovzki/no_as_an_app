@@ -11,7 +11,6 @@ phases:
         fi
       - export PATH="$PATH:`pwd`/.flutter_cache/flutter/bin"
       - flutter doctor
-      - flutter doctor --android-licenses
   pre_build:
     commands:
       - flutter pub get
