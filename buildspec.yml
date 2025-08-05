@@ -3,31 +3,27 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Restoring Flutter SDK from cache or clone if missing"
+      - echo "Setting up Flutter SDK"
       - mkdir -p .flutter_cache
       - |
         if [ ! -d ".flutter_cache/flutter" ]; then
-          echo "Flutter SDK not found in cache. Cloning..."
           git clone https://github.com/flutter/flutter.git -b stable .flutter_cache/flutter
-        else
-          echo "Flutter SDK restored from cache."
         fi
       - export PATH="$PATH:`pwd`/.flutter_cache/flutter/bin"
       - flutter doctor
   pre_build:
     commands:
-      - echo "Fetching Dart packages..."
       - flutter pub get
   build:
     commands:
-      - echo "Building with flavor: $FLUTTER_ENV"
+      - echo "Building with flavor $FLUTTER_ENV and API $API_BASE_URL"
       - flutter build apk --flavor $FLUTTER_ENV --dart-define=API_BASE_URL=$API_BASE_URL --release
       - mkdir -p build/devicefarm
       - cp build/app/outputs/flutter-apk/app-release.apk build/devicefarm/
       - cd build/devicefarm && zip flutter-app.zip app-release.apk
   post_build:
     commands:
-      - echo "Build complete!"
+      - echo "Build complete"
 
 artifacts:
   files:
