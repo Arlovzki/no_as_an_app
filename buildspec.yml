@@ -11,7 +11,7 @@ phases:
       - flutter pub get
   build:
     commands:
-      - flutter build apk --release
+      - flutter build apk --flavor prod --target lib/main.dart --release --dart-define-from-file=env/prod/env.prod.json
       - mkdir -p build/devicefarm
       - cp build/app/outputs/flutter-apk/app-release.apk build/devicefarm/
       - cd build/devicefarm && zip flutter-app.zip app-release.apk
