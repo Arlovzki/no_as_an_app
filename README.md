@@ -1,18 +1,26 @@
-# flutter_test_project
+# Flutter App
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter project in eCloudValley.
+This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Flutter Architecture](https://walnut-raccoon-d7a.notion.site/Flutter-Clean-Architecture-bcb2a6dd5fe84b029243cb6fdc7efcab?pvs=4)
-- [Flutter Boilerplate Guide](https://walnut-raccoon-d7a.notion.site/Flutter-Boilerplate-Guide-766a29a94cba4212b61839c6e80f087c?pvs=4)
+Make sure you have the following installed:
 
-## How to build flutter project using a file
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- [Dart SDK](https://dart.dev/get-dart)
+- [Android Studio](https://developer.android.com/studio) or [VS Code](https://code.visualstudio.com/)
+- Xcode (for iOS development on macOS)
 
-```sh
-    flutter run --flavor dev --dart-define-from-file=env/dev/env.dev.debug.json
-```
+### Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/your-username/your-flutter-project.git
+cd your-flutter-project
+flutter pub get
+
