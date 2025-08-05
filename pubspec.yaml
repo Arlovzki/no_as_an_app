@@ -1,9 +1,9 @@
 name: no_as_an_app
-description: A mobile app that will help you to create an excuses or  reasons to say no
+description: A mobile app that will help you to create an excuses or reasons to say no
 
 publish_to: "none"
 
-version: 1.0.0+2
+version: 1.0.0+3
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
