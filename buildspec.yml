@@ -23,6 +23,7 @@ phases:
       - echo "Building with flavor $MOBILE_ENV and API $API_BASE_URL"
       - flutter build apk  --flavor $MOBILE_ENV --target lib/main.dart --release --dart-define=API_BASE_URL=$API_BASE_URL
       - mkdir -p build/devicefarm
+      - cp pubspec.yaml build/devicefarm/
       - cp build/app/outputs/flutter-apk/app-$MOBILE_ENV-release.apk build/devicefarm/app-release.apk
       - cd build/devicefarm && zip -j flutter-app.zip app-release.apk pubspec.yaml
       - aws s3 cp flutter-app.zip s3://$ARTIFACT_BUCKET/build/devicefarm/flutter-app.zip
