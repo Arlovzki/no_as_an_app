@@ -16,11 +16,11 @@ phases:
       - flutter pub get
   build:
     commands:
-      - echo "Building with flavor $FLUTTER_ENV and API $API_BASE_URL"
-      - flutter build apk  --flavor $FLUTTER_ENV --target lib/main.dart --release --dart-define=API_BASE_URL=$API_BASE_URL
+      - echo "Building with flavor $MOBILE_ENV and API $API_BASE_URL"
+      - flutter build apk  --flavor $MOBILE_ENV --target lib/main.dart --release --dart-define=API_BASE_URL=$API_BASE_URL
       - mkdir -p build/devicefarm
-      - cp build/app/outputs/flutter-apk/app-$FLUTTER_ENV-release.apk build/devicefarm/
-      - cd build/devicefarm && zip flutter-app.zip app-$FLUTTER_ENV-release.apk
+      - cp build/app/outputs/flutter-apk/app-$MOBILE_ENV-release.apk build/devicefarm/
+      - cd build/devicefarm && zip flutter-app.zip app-$MOBILE_ENV-release.apk
   post_build:
     commands:
       - echo "Build complete"
