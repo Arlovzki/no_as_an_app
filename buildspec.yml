@@ -3,10 +3,6 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Installing AWS CLI"
-      - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-      - unzip awscliv2.zip
-      - ./aws/install
       - echo "Setting up Flutter SDK"
       - mkdir -p .flutter_cache
       - |
@@ -21,20 +17,16 @@ phases:
   build:
     commands:
       - echo "Building with flavor $MOBILE_ENV and API $API_BASE_URL"
-      - flutter build apk  --flavor $MOBILE_ENV --target lib/main.dart --release --dart-define=API_BASE_URL=$API_BASE_URL
-      - mkdir -p build/devicefarm
-      - cp pubspec.yaml build/devicefarm/
-      - cp build/app/outputs/flutter-apk/app-$MOBILE_ENV-release.apk build/devicefarm/app-release.apk
-      - cd build/devicefarm && zip -j flutter-app.zip app-release.apk pubspec.yaml
-      - aws s3 cp flutter-app.zip s3://$ARTIFACT_BUCKET/build/devicefarm/flutter-app.zip
-
+      - flutter build apk --flavor $MOBILE_ENV --target lib/main.dart --release --dart-define=API_BASE_URL=$API_BASE_URL
   post_build:
     commands:
-      - echo "APK uploaded to S3 at $ARTIFACT_BUCKET/build/devicefarm/flutter-app.zip"
+      - ls -lah build/app/outputs/flutter-apk || true
+      - echo "Build complete"
 
 artifacts:
   files:
-    - build/devicefarm/flutter-app.zip
+    - build/app/outputs/flutter-apk/app-$MOBILE_ENV-release.apk
+  discard-paths: no
 
 cache:
   paths:
