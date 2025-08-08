@@ -26,6 +26,7 @@ phases:
 artifacts:
   files:
     - build/app/outputs/flutter-apk/app-$MOBILE_ENV-release.apk
+    - pubspec.yaml
   discard-paths: no
 
 cache:
